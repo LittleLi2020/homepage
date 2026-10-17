@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Little' s Homepage</title>
+    <title>黎韬 · 履历</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="黎韬，清华大学经济管理学院博士后。研究方向：保险经济学、健康经济学。">
+    <meta name="author" content="黎韬">
     <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.min.css" />
@@ -15,8 +14,70 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<style>
 		.intro h1:before {
-			/* Edit this with your name or anything else */
 			content: "";
+		}
+		.intro h1 {
+			font-size: 58px;
+			letter-spacing: 10px;
+			margin-bottom: 18px;
+		}
+		.intro .cv-title {
+			font-size: 1.2em;
+			font-weight: 700;
+			color: #333;
+		}
+		.cv-list {
+			margin: 0;
+			padding: 0;
+		}
+		.cv-list li {
+			list-style: none;
+			margin-bottom: 24px;
+		}
+		.cv-list .cv-title {
+			font-weight: 700;
+			color: #333;
+			font-size: 1em;
+		}
+		.cv-list .cv-desc {
+			margin: 2px 0 0;
+		}
+		.cv-list .cv-meta {
+			color: #8c8c8c;
+			font-size: 0.9375em;
+		}
+		.cv-date {
+			text-align: right;
+			color: #8c8c8c;
+			font-size: 0.9375em;
+		}
+		.paper-list {
+			margin: 0;
+			padding: 0;
+			counter-reset: paper;
+		}
+		.paper-list li {
+			list-style: none;
+			margin-bottom: 16px;
+			padding-left: 30px;
+			position: relative;
+			text-align: justify;
+		}
+		.paper-list li:before {
+			counter-increment: paper;
+			content: "[" counter(paper) "]";
+			position: absolute;
+			left: 0;
+			color: #8c8c8c;
+		}
+		.inline-list {
+			margin: 6px 0 0;
+			padding: 0;
+		}
+		.inline-list li {
+			display: inline-block;
+			list-style: none;
+			margin: 0 18px 6px 0;
 		}
 	</style>
 </head>
@@ -30,11 +91,13 @@
 				</div>
 			    <nav id="navbar-1" class="navbar item-nav">
 				    <ul>
-				        <li class="active"><a href="#about">关于我</a></li>
-				        <li><a href="#websites">常用网页</a></li>
-				        <li><a href="#books">我的书籍</a></li>
-				        <li><a href="#papers">我的论文</a></li>
-				        <li><a href="#songs">不为谁而唱的歌</a></li>
+				        <li class="active"><a href="#about">研究背景</a></li>
+				        <li><a href="#papers">科研成果</a></li>
+				        <li><a href="#funds">科研基金</a></li>
+				        <li><a href="#qualifications">职业资格</a></li>
+				        <li><a href="#experience">实习经历</a></li>
+				        <li><a href="#awards">荣誉奖励</a></li>
+				        <li><a href="#conferences">学术会议</a></li>
 				    </ul>
 				</nav>
 			</header>
@@ -44,111 +107,193 @@
 	<!-- Introduction -->
 	<div class="intro section" id="about">
 		<div class="container">
-			<p>您好，我是良谦，是一名北美准精算师，目前正在攻读中国人民大学的经济学博士学位。</p>
-			<div class="units-row units-split wrap">
-				<div class="unit-20">
-					<img src="img/photo.jpg" alt="Avatar">
-				</div>
-				<div class="unit-80">
-					<h1>I live in<br><span id="typed"></span></h1>
-				</div>
-				<p>
-				</p>
-			</div>
-		</div>
-	</div>
-	<!-- websites-->
-	<div class="work section second" id="websites">
-		<div class="container">
-			<h1>常用网页</h1>
-			<ul class="work-list">
-				<li>update on 2022-03-26</li>
-				<li><a href = "https://bxyj.cbpt.cnki.net/WKE2/WebPublication/index.aspx?mid=BXYJ">保险研究</a></li>
-				<li><a href = "http://www.erj.cn/cn/mlInfo.aspx?m=20220309094605133049&n=20220309094717807052&tip=0">经济研究</a></li>
-				<li><a href = "http://www.niehuihua.com/">白鲨在线</a></li>
-				<li><a href = "https://www.tandfonline.com/loi/sact20">Scandinavian Actuarial Journal</a></li>
-				<li><a href = "https://www.sciencedirect.com/journal/journal-of-economic-theory/issues">Journal of Economic Theory</a></li>
-				<li><a href = "https://link.springer.com/journal/11166/volumes-and-issues">Journal of Risk and Uncertainty</a></li>
-				<li><a href = "https://onlinelibrary.wiley.com/loi/15396975">Journal of Risk and Insurance</a></li>
-				<li><a href = "https://www.sciencedirect.com/journal/pacific-basin-finance-journal/issues">Pacific-Basin Financial Journal</a></li>
-				<li><a href = "https://www.sciencedirect.com/journal/insurance-mathematics-and-economics/issues">Insurance: Mathematics and Economics</a></li>
-				<li><a href = "https://chfser.swufe.edu.cn/datas/Products/Datas/DataList">CHFS</a></li>
-				<li><a href = "http://www.isss.pku.edu.cn/cfps/download/login#/fileTreeList">CFPS</a></li>
-				<li><a href = "https://www.prometric.com/soa">Normal Distribution Calculator</a></li>
+			<h1>黎 韬</h1>
+			<p class="cv-title">博士后 · 清华大学经济管理学院</p>
+			<p>北京市海淀区双清路30号清华大学</p>
+			<ul class="inline-list">
+				<li><i class="fa fa-phone"></i> (+86) 17611082566</li>
+				<li><i class="fa fa-envelope"></i> <a href="mailto:litao@sem.tsinghua.edu.cn">litao@sem.tsinghua.edu.cn</a></li>
+				<li><i class="fa fa-home"></i> <a href="https://littleli2020.github.io/homepage/">littleli2020.github.io/homepage</a></li>
 			</ul>
 		</div>
 	</div>
-	<!-- books -->
-	<div class="work section second" id="books">
+
+	<!-- 研究背景 -->
+	<div class="work section second" id="background">
 		<div class="container">
-			<h1>我的书籍</h1>
-			<ul class="work-list">
-				<li>update on 2021-08-11</li>
-				<li><a href="https://github.com/LittleLi2020/homepage/raw/gh-pages/doc/statistical_modelling.pdf">Statistical Modeling Method</a></li>
+			<h1>研究背景</h1>
+			<ul class="cv-list">
+				<li>
+					<div class="units-row">
+						<div class="unit-80">
+							<div class="cv-title">清华大学经济管理学院 · 金融系博士后</div>
+							<div class="cv-desc">指导老师：冯润桓　|　中国 · 北京</div>
+						</div>
+						<div class="unit-20 cv-date">2026/05–至今</div>
+					</div>
+				</li>
+				<li>
+					<div class="units-row">
+						<div class="unit-80">
+							<div class="cv-title">国家数据发展研究院 · 数据资源研究岗</div>
+							<div class="cv-desc">中国 · 北京</div>
+						</div>
+						<div class="unit-20 cv-date">2025/06–2026/05</div>
+					</div>
+				</li>
+				<li>
+					<div class="units-row">
+						<div class="unit-80">
+							<div class="cv-title">中国人民大学财政金融学院 · 保险学博士研究生</div>
+							<div class="cv-desc">指导老师：魏丽、陈泽　|　中国 · 北京</div>
+						</div>
+						<div class="unit-20 cv-date">2020/09–2025/06</div>
+					</div>
+				</li>
+				<li>
+					<div class="units-row">
+						<div class="unit-80">
+							<div class="cv-title">鲁汶大学（KU Leuven）经济与商学院 · 国际精算学博士研究生</div>
+							<div class="cv-desc">指导老师：JAN DHAENE　|　比利时 · 鲁汶</div>
+						</div>
+						<div class="unit-20 cv-date">2023/11–2024/11</div>
+					</div>
+				</li>
+				<li>
+					<div class="units-row">
+						<div class="unit-80">
+							<div class="cv-title">南开大学金融学院 · 经济学学士</div>
+							<div class="cv-desc">指导老师：张连增　|　中国 · 天津</div>
+						</div>
+						<div class="unit-20 cv-date">2016/09–2020/06</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
-	<!-- papers -->
+
+	<!-- 科研经历 -->
+	<div class="work section second" id="research">
+		<div class="container">
+			<h1>科研经历</h1>
+			<ul class="cv-list">
+				<li><span class="cv-title">研究方向</span>　保险经济学、健康经济学</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 科研成果 -->
 	<div class="work section second" id="papers">
 		<div class="container">
-			<h1>我的论文</h1>
-			<ul class="work-list">
-				<li>update on 2019-07-12</li>
-				<li><a href = "https://github.com/LittleLi2020/homepage/raw/gh-pages/doc/social_annuity.pdf">Does Social Annuity Affect Fertality Rate? </a></li>
-			</ul>
+			<h1>科研成果</h1>
+			<ol class="paper-list">
+				<li>Hong Li, Tao Li (Corresponding author). “Falsification Fraud in Insurance Markets: Algorithms, Auditing, and Nitpicking”. <em>The Journal of Risk and Insurance</em>, accepted and forthcoming.</li>
+				<li>Ze Chen, Hong Li, Tao Li (Corresponding author), Li Wei. “Commitment and Nitpicky Behaviors in Insurance”. Reviewed and resubmitted to <em>Insurance: Mathematics and Economics</em>.</li>
+				<li>Hong Li, Tao Li (Corresponding author). “Moral Hazard Spillovers Across Losses”. <em>Economics Letters</em> (2026): 101–113.</li>
+				<li>Feiyan Yang, Jiahui Ren, Wei He, Tao Li, and Changyuan Xia. “Economic Policy Uncertainty and Corporate Demand for Property Insurance”. <em>The Geneva Papers on Risk and Insurance — Issues and Practice</em> (2026): 299–339.</li>
+				<li>陈泽，黎韬（导师一作，学生二作），魏丽，冯琦. 网络互助的低发病率之谜与解释：基于某头部网络互助平台的证据和分析[J]. 保险研究, 2022(09): 109–127.</li>
+				<li>陈泽，黎韬（导师一作，学生二作），魏丽. 保险负债的市场一致性定价方法：前沿综述与展望. 保险研究, 终审中待发表.</li>
+			</ol>
 		</div>
 	</div>
 
-	<!-- songs-->
-	<div class="work section second" id="songs">
+	<!-- 科研基金 -->
+	<div class="work section second" id="funds">
 		<div class="container">
-			<h1>不为谁而唱的歌</h1>
-			<ul class="work-list">
-				<li><a href = "https://www.jitabang.com/jiaoxue/7788.html">异乡人</a></li>
-				<li><a href = "http://m.mmjita.com/puku/pic/2018-04-26/11176.html">有何不可</a></li>
-				<li><a href = "https://www.daweijita.com/141720.html">火红的萨日朗</a></li>
-				<li><a href = "http://www.798com.com/article-32645-1.html">玫瑰</a></li>
-				<li><a href = "https://www.jitayuan.com/jitapu/152372.html">素颜</a></li>
-				<li><a href = "https://www.17jita.com/tab/img/4133.html">童年</a></li>
-				<li><a href = "http://www.echangwang.com/pic/12/6944.html">桥边姑娘</a></li>
-				<li><a href = "http://www.798com.com/article-36137-1.html">爱江山更爱美人</a></li>
-				<li><a href = "https://www.jitabang.com/jitapu/5440.html">情非得已</a></li>
-				<li><a href = "https://www.jitabang.com/jitapu/5869.html">老男孩</a></li>
-				<li><a href = "https://github.com/LittleLi2020/homepage/raw/gh-pages/doc/until.png">直到对的人来</a></li>
-				<li><a href = "http://www.798com.com/article-1069-1.html">那就这样吧</a></li>
-				<li><a href = "https://github.com/LittleLi2020/homepage/raw/gh-pages/doc/bad.png">坏女孩</a></li>
-				<li><a href = "http://www.echangwang.com/pic/11/7972.html">兄弟抱一下</a></li>
-				<li><a href = "https://www.daweijita.com/13564.html">匆匆那年</a></li>
-				<li><a href = "https://www.52cmajor.com/tab/72415682513584128">春天里</a></li>
-				<li><a href = "https://www.yinban.com/tab/sing/4878.html">小镇姑娘</a></li>
-				<li><a href = "https://www.17jita.com/jitapu/img/3831.html">花房姑娘</a></li>
-				<li><a href = "http://www.echangwang.com/pic/12/6994.html">我爱的人</a></li>
-				<li><a href = "http://www.798com.com/article-1070-1.html">旅行的意义</a></li>
-				<li><a href = "https://www.daweijita.com/4679.html">亲密爱人</a></li>
-				<li><a href = "https://www.daweijita.com/141121.html">写给黄淮</a></li>
-				<li><a href = "http://www.798com.com/article-1055-1.html">南方姑娘</a></li>
-				<li><a href = "https://www.jitabang.com/jitapu/6011.html">那些花儿</a></li>
-				<li><a href = "http://www.echangwang.com/pic/11/8002.html">没那种命</a></li>
-				<li><a href = "https://github.com/LittleLi2020/homepage/raw/gh-pages/doc/tishen.png">替身</a></li>
-				<li><a href = "https://www.17jita.com/tab/img/7035.html">成都</a></li>
-				<li><a href = "https://github.com/LittleLi2020/homepage/raw/gh-pages/doc/dream.png">梦一场</a></li>
-				<li><a href = "https://www.17jita.com/tab/img/2083_2.html">周三的情书</a></li>
-				<li><a href = "https://www.17jita.com/tab/img/6203.html">一次就好</a></li>
-				<li><a href = "https://www.17jita.com/tab/img/7104.html">父亲写的散文诗</a></li>
-				<li><a href = "http://www.echangwang.com/pic/04/7341.html">玫瑰花的葬礼</a></li>
-				<li><a href = "https://www.17jita.com/jitapu/img/149.html">丁香花</a></li>
-				<li><a href = "http://www.echangwang.com/pic/04/4847.html">同桌的你</a></li>
-				<li><a href = "https://www.17jita.com/jitapu/img/1213.html">我的好兄弟</a></li>
-				<li><a href = "http://www.echangwang.com/pic/10/4238.html">不将就</a></li>
-				<li><a href = "https://www.17jita.com/tab/img/6852.html">小薇</a></li>
+			<h1>科研基金</h1>
+			<ul class="cv-list">
+				<li><span class="cv-title">中国人民大学研究生科研基金</span>，去中心化保险中委托代理问题研究（编号：23XNH003），2023.01–2025.01，主持人</li>
+				<li><span class="cv-title">中国保险学会2026年度研究课题</span>，DRG/DIP改革对商业医疗保险的影响机制与应对策略：基于商保数据和风险共担视角的实证评估与理论分析（编号：ISCKT2026-N-1-19），2026.04–2026.12，主要执行人</li>
 			</ul>
 		</div>
 	</div>
 
-	<!-- Quote -->
-	<div class="quote">
-		<div class="container text-centered">
-			<h1>我想在那里最高的山峰伫立</h1>
+	<!-- 职业资格 -->
+	<div class="work section second" id="qualifications">
+		<div class="container">
+			<h1>职业资格</h1>
+			<ul class="cv-list">
+				<li>
+					<div class="cv-title">北美精算师协会（SOA）精算师，已通过全部考试</div>
+					<ul class="inline-list">
+						<li>Predictive Analytics (8)</li>
+						<li>Short-Term Actuarial Mathematics (10)</li>
+						<li>Probability (10)</li>
+						<li>Financial Mathematics (9)</li>
+						<li>Long-Term Actuarial Mathematics (7)</li>
+						<li>Investment and Financial Markets (8)</li>
+						<li>VEE Accounting and Finance</li>
+						<li>VEE Applied Statistics</li>
+						<li>VEE Economics</li>
+					</ul>
+					<div class="cv-meta">2017.09–至今</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 审稿服务 -->
+	<div class="work section second" id="reviewing">
+		<div class="container">
+			<h1>审稿服务</h1>
+			<ul class="cv-list">
+				<li><em>Journal of Risk and Insurance</em> 匿名审稿人</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 实习经历 -->
+	<div class="work section second" id="experience">
+		<div class="container">
+			<h1>实习经历</h1>
+			<ul class="cv-list">
+				<li>
+					<div class="units-row">
+						<div class="unit-80"><span class="cv-title">精算咨询实习生</span>，腾讯天衍实验室</div>
+						<div class="unit-20 cv-date">2020.12–2021.05</div>
+					</div>
+				</li>
+				<li>
+					<div class="units-row">
+						<div class="unit-80"><span class="cv-title">科研助理</span>，清华大学五道口金融学院</div>
+						<div class="unit-20 cv-date">2020.05–2020.09</div>
+					</div>
+				</li>
+				<li>
+					<div class="units-row">
+						<div class="unit-80"><span class="cv-title">财险精算实习生</span>，慕尼黑再保险公司北京分公司</div>
+						<div class="unit-20 cv-date">2019.09–2020.01</div>
+					</div>
+				</li>
+				<li>
+					<div class="units-row">
+						<div class="unit-80"><span class="cv-title">保险创新实习生</span>，招商银行</div>
+						<div class="unit-20 cv-date">2017.09–2018.01</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 荣誉奖励 -->
+	<div class="work section second" id="awards">
+		<div class="container">
+			<h1>荣誉奖励</h1>
+			<ul class="cv-list">
+				<li><span class="cv-title">2020</span>　北美产险精算师协会（CAS）–腾讯天衍实验室数据分析大赛一等奖（第1名），CAS</li>
+				<li><span class="cv-title">2022</span>　中国保险与风险管理国际年会（CICIRM）最佳论文奖，CICIRM组委会</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 学术会议 -->
+	<div class="work section second" id="conferences">
+		<div class="container">
+			<h1>学术会议</h1>
+			<ul class="cv-list">
+				<li><span class="cv-title">中文汇报</span>：中国保险与风险管理国际年会（2022）、中国经济研究中心夏季论坛（2021）、中国卫生经济学与公共政策论坛（2021）</li>
+				<li><span class="cv-title">英文汇报</span>：IME International Congress (2024)、Scandinavian Actuarial Conference (2024)、Belgian Financial Research Forum (2024)、China International Conference on Insurance and Risk Management (2023)、China International Risk Forum (2022)</li>
+			</ul>
 		</div>
 	</div>
 
@@ -156,11 +301,11 @@
 		<div class="container">
 			<div class="units-row">
 			    <div class="unit-50">
-			    	<p></p>
+			    	<p>© 2026 黎韬</p>
 			    </div>
 			    <div class="unit-50">
 					<ul class="social list-flat right">
-						<li><a href="littleli@ruc.edu.cn"><i class="fa fa-send"></i></a></li>
+						<li><a href="mailto:litao@sem.tsinghua.edu.cn"><i class="fa fa-send"></i></a></li>
 					</ul>
 			    </div>
 			</div>
@@ -169,15 +314,7 @@
 
 	<!-- Javascript -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
     <script src="js/kube.min.js"></script>
     <script src="js/site.js"></script>
-    <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["天际", "群星", "交界"],
-
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-    </script>
 </body>
 </html>
