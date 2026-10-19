@@ -70,11 +70,29 @@
 			left: 0;
 			color: #8c8c8c;
 		}
+		.paper-details {
+			margin-top: 2px;
+		}
+		.paper-details summary {
+			display: inline-block;
+			cursor: pointer;
+			color: #2e6fd8;
+			font-weight: 700;
+			list-style: none;
+			border-bottom: 1px dashed #2e6fd8;
+		}
+		.paper-details summary::-webkit-details-marker {
+			display: none;
+		}
+		.paper-details[open] summary {
+			color: #333333;
+			border-bottom-color: transparent;
+		}
 		.paper-abstract {
-			margin-top: 12px;
+			margin: 8px 0 0;
 			background: #f4f4f4;
 			border-left: 4px solid #2e6fd8;
-			padding: 18px 22px;
+			padding: 14px 18px;
 		}
 		.paper-abstract h2 {
 			font-size: 1.05em;
@@ -294,7 +312,16 @@
 		<div class="container">
 			<h1><span class="zh">科研成果</span><span class="en">Publications</span></h1>
 			<ol class="paper-list">
-				<li>Hong Li, Tao Li (Corresponding author). “Falsification Fraud in Insurance Markets: Algorithms, Auditing, and Nitpicking”. <em>The Journal of Risk and Insurance</em>, accepted and forthcoming. [<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6316239" target="_blank" rel="noopener">SSRN</a>] [<a href="#paper1-abstract"><span class="zh">简要介绍</span><span class="en">Abstract</span></a>]</li>
+				<li>Hong Li, Tao Li (Corresponding author). “Falsification Fraud in Insurance Markets: Algorithms, Auditing, and Nitpicking”. <em>The Journal of Risk and Insurance</em>, accepted and forthcoming. [<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6316239" target="_blank" rel="noopener">SSRN</a>]
+					<details class="paper-details">
+						<summary><span class="zh">简要介绍</span><span class="en">Abstract</span></summary>
+						<div class="paper-abstract">
+							<h2><span class="zh">论文简介 · Falsification Fraud in Insurance Markets: Algorithms, Auditing, and Nitpicking</span><span class="en">Abstract · Falsification Fraud in Insurance Markets: Algorithms, Auditing, and Nitpicking</span></h2>
+							<p class="zh">本文研究保险市场中一种常见但研究不足的造假欺诈问题：投保人遭遇了合同免责范围内的真实损失，却将其谎报为承保损失。在一个审计策略有成本且无法事先承诺的完全竞争市场中，均衡状态下审计与造假行为并存；当审计成本较低或投保人风险厌恶程度较高时，均衡合同表现为保险不足，反之则表现为过度保险。文章进一步引入两种理赔处理工具：对报案理赔进行二元预审计评分，以及对被审计的真实理赔进行事后赔付削减（即"吹毛求疵式"理赔处理，nitpicking）。研究发现：算法驱动的定向审计对均衡的影响是非单调的——只有当算法灵敏度足够高时才能抑制欺诈并改善福利，否则反而会加剧造假、降低福利；赔付削减通过强化审计激励可以遏制造假，但同时削弱了对被审计真实理赔的保护；两种工具大体上互为替代，算法定向能力的提升会压缩赔付削减改善福利的空间。</p>
+							<p class="en">This paper studies a prevailing yet underexplored problem of falsification fraud: a policyholder suffers a real loss in a contractually excluded state but reports it as covered. In a perfectly competitive market with a costly and uncommitted auditing strategy, equilibrium features positive auditing and falsification, and the equilibrium contract can exhibit underinsurance when auditing is inexpensive or the policyholder's risk aversion is high, and overinsurance otherwise. We then introduce two claims-handling tools: a binary pre-audit scoring algorithm on reported claims and post-audit payment reductions (nitpicking) on audited honest claims. We find that algorithm-induced targeted auditing has a non-monotonic equilibrium effect: it mitigates fraud and improves welfare only when sensitivity is sufficiently high; otherwise, it can raise falsification and reduce welfare. In addition, nitpicking can deter falsification by strengthening audit incentives, but it reduces protection for audited honest claims. Finally, the two tools operate largely as substitutes: improvements in algorithmic targeting reduce the scope for welfare-improving nitpicking.</p>
+						</div>
+					</details>
+				</li>
 				<li>Ze Chen, Hong Li, Tao Li (Corresponding author), Li Wei. “Commitment and Nitpicky Behaviors in Insurance”, revised and resubmitted to <em>Insurance: Mathematics and Economics</em>.</li>
 				<li>Hong Li, Tao Li (Corresponding author). “Moral Hazard Spillovers Across Losses”. <em>Economics Letters</em> (2026): 101–113.</li>
 				<li>Feiyan Yang, Jiahui Ren, Wei He, Tao Li, and Changyuan Xia. “Economic Policy Uncertainty and Corporate Demand for Property Insurance”. <em>The Geneva Papers on Risk and Insurance — Issues and Practice</em> (2026): 299–339.</li>
@@ -303,11 +330,6 @@
 				<li class="zh">陈泽，黎韬（导师一作，学生二作），魏丽. 保险负债的市场一致性定价方法：前沿综述与展望. 保险研究, 终审中待发表.</li>
 				<li class="en">Ze Chen, Tao Li (supervisor first author, student second author), Li Wei. Market-Consistent Pricing Methods for Insurance Liabilities: A Frontier Review and Outlook. <em>Insurance Studies</em>, in final review.</li>
 			</ol>
-			<div class="paper-abstract" id="paper1-abstract">
-				<h2><span class="zh">论文简介 · Falsification Fraud in Insurance Markets: Algorithms, Auditing, and Nitpicking</span><span class="en">Abstract · Falsification Fraud in Insurance Markets: Algorithms, Auditing, and Nitpicking</span></h2>
-				<p class="zh">本文研究保险市场中一种常见但研究不足的造假欺诈问题：投保人遭遇了合同免责范围内的真实损失，却将其谎报为承保损失。在一个审计策略有成本且无法事先承诺的完全竞争市场中，均衡状态下审计与造假行为并存；当审计成本较低或投保人风险厌恶程度较高时，均衡合同表现为保险不足，反之则表现为过度保险。文章进一步引入两种理赔处理工具：对报案理赔进行二元预审计评分，以及对被审计的真实理赔进行事后赔付削减（即"吹毛求疵式"理赔处理，nitpicking）。研究发现：算法驱动的定向审计对均衡的影响是非单调的——只有当算法灵敏度足够高时才能抑制欺诈并改善福利，否则反而会加剧造假、降低福利；赔付削减通过强化审计激励可以遏制造假，但同时削弱了对被审计真实理赔的保护；两种工具大体上互为替代，算法定向能力的提升会压缩赔付削减改善福利的空间。</p>
-				<p class="en">This paper studies a prevailing yet underexplored problem of falsification fraud: a policyholder suffers a real loss in a contractually excluded state but reports it as covered. In a perfectly competitive market with a costly and uncommitted auditing strategy, equilibrium features positive auditing and falsification, and the equilibrium contract can exhibit underinsurance when auditing is inexpensive or the policyholder's risk aversion is high, and overinsurance otherwise. We then introduce two claims-handling tools: a binary pre-audit scoring algorithm on reported claims and post-audit payment reductions (nitpicking) on audited honest claims. We find that algorithm-induced targeted auditing has a non-monotonic equilibrium effect: it mitigates fraud and improves welfare only when sensitivity is sufficiently high; otherwise, it can raise falsification and reduce welfare. In addition, nitpicking can deter falsification by strengthening audit incentives, but it reduces protection for audited honest claims. Finally, the two tools operate largely as substitutes: improvements in algorithmic targeting reduce the scope for welfare-improving nitpicking.</p>
-			</div>
 		</div>
 	</div>
 
