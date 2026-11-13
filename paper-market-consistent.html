@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>论文简介 · 保险负债的市场一致性定价方法</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="保险负债的市场一致性定价方法：前沿综述与展望 - 论文简介">
+    <meta name="author" content="黎韬">
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="stylesheet" href="css/paper.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="zh">
+	<button id="lang-toggle" type="button">EN</button>
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#abstract"><span class="zh">论文简介</span><span class="en">Abstract</span></a></li>
+				        <li><a href="index.html"><span class="zh">返回主页</span><span class="en">Back to Homepage</span></a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+	<div class="intro section" id="abstract">
+		<div class="container">
+			<h1><span class="zh">论文简介 · 保险负债的市场一致性定价方法：前沿综述与展望</span><span class="en">Abstract · Market-Consistent Pricing Methods for Insurance Liabilities: A Frontier Review and Outlook</span></h1>
+			<p class="cv-meta">陈泽，黎韬（导师一作，学生二作），魏丽 · 保险研究, 终审中待发表</p>
+			<div class="paper-abstract">
+				<h2><span class="zh">简要介绍</span><span class="en">Abstract</span></h2>
+				<p class="zh">本文对保险负债的市场一致性定价方法进行了前沿综述，系统梳理了市场一致性定价框架与最新研究进展，并展望了未来的研究方向。</p>
+				<p class="en">This paper provides a frontier review of market-consistent pricing methods for insurance liabilities, systematically surveying the market-consistent pricing frameworks and recent research advances, and discusses directions for future research.</p>
+			</div>
+			<p><a href="index.html"><span class="zh">返回主页</span><span class="en">Back to Homepage</span></a></p>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p><span class="zh">© 2026 黎韬</span><span class="en">© 2026 Tao Li</span></p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:litao@sem.tsinghua.edu.cn"><i class="fa fa-send"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		(function () {
+			var btn = document.getElementById('lang-toggle');
+			function setLang(lang) {
+				document.body.classList.remove('zh', 'en');
+				document.body.classList.add(lang);
+				document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+				document.title = (lang === 'zh') ? '论文简介 · 保险负债的市场一致性定价方法' : 'Abstract · Market-Consistent Pricing Methods for Insurance Liabilities';
+				btn.textContent = (lang === 'zh') ? 'EN' : '中文';
+				try { localStorage.setItem('homepage-lang', lang); } catch (e) {}
+			}
+			var saved = null;
+			try { saved = localStorage.getItem('homepage-lang'); } catch (e) {}
+			setLang(saved === 'en' ? 'en' : 'zh');
+			btn.addEventListener('click', function () {
+				var cur = document.body.classList.contains('en') ? 'en' : 'zh';
+				setLang(cur === 'en' ? 'zh' : 'en');
+			});
+		})();
+    </script>
+</body>
+</html>

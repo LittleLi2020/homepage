@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>论文简介 · Moral Hazard Spillovers Across Losses</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Moral Hazard Spillovers Across Losses - 论文简介">
+    <meta name="author" content="黎韬">
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="stylesheet" href="css/paper.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="zh">
+	<button id="lang-toggle" type="button">EN</button>
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#abstract"><span class="zh">论文简介</span><span class="en">Abstract</span></a></li>
+				        <li><a href="index.html"><span class="zh">返回主页</span><span class="en">Back to Homepage</span></a></li>
+				        <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6906045" target="_blank" rel="noopener">SSRN</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+	<div class="intro section" id="abstract">
+		<div class="container">
+			<h1><span class="zh">论文简介 · Moral Hazard Spillovers Across Losses</span><span class="en">Abstract · Moral Hazard Spillovers Across Losses</span></h1>
+			<p class="cv-meta">Hong Li, Tao Li (Corresponding author) · <em>Economics Letters</em> (2026): 101–113</p>
+			<div class="paper-abstract">
+				<h2><span class="zh">简要介绍</span><span class="en">Abstract</span></h2>
+				<p class="zh">在一个竞争性保险市场中，考虑两种互斥的损失：其中一种存在道德风险，另一种不存在。我们证明：即使对不存在道德风险的那类损失，投保人也只会购买部分保险；且对后者的保障总是更为充足。数值分析显示，当预防努力更有效或投保人风险厌恶程度更低时，两类损失之间的保障差距会进一步扩大。</p>
+				<p class="en">In a competitive insurance market with two mutually exclusive losses — one is subject to moral hazard while the other is not — we demonstrate that policyholders buy only partial insurance coverage for both losses, even if the second is free of moral hazard. Moreover, the coverage for the second loss is always more generous, and numerical analysis shows that the coverage gap widens with more efficient prevention efforts or lower risk aversion.</p>
+			</div>
+			<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6906045" target="_blank" rel="noopener"><span class="zh">在 SSRN 上查看全文</span><span class="en">View the full paper on SSRN</span></a> · <a href="index.html"><span class="zh">返回主页</span><span class="en">Back to Homepage</span></a></p>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p><span class="zh">© 2026 黎韬</span><span class="en">© 2026 Tao Li</span></p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:litao@sem.tsinghua.edu.cn"><i class="fa fa-send"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		(function () {
+			var btn = document.getElementById('lang-toggle');
+			function setLang(lang) {
+				document.body.classList.remove('zh', 'en');
+				document.body.classList.add(lang);
+				document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+				document.title = (lang === 'zh') ? '论文简介 · Moral Hazard Spillovers Across Losses' : 'Abstract · Moral Hazard Spillovers Across Losses';
+				btn.textContent = (lang === 'zh') ? 'EN' : '中文';
+				try { localStorage.setItem('homepage-lang', lang); } catch (e) {}
+			}
+			var saved = null;
+			try { saved = localStorage.getItem('homepage-lang'); } catch (e) {}
+			setLang(saved === 'en' ? 'en' : 'zh');
+			btn.addEventListener('click', function () {
+				var cur = document.body.classList.contains('en') ? 'en' : 'zh';
+				setLang(cur === 'en' ? 'zh' : 'en');
+			});
+		})();
+    </script>
+</body>
+</html>

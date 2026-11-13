@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>论文简介 · Economic Policy Uncertainty and Corporate Demand for Property Insurance</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Economic Policy Uncertainty and Corporate Demand for Property Insurance - 论文简介">
+    <meta name="author" content="黎韬">
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="stylesheet" href="css/paper.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="zh">
+	<button id="lang-toggle" type="button">EN</button>
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#abstract"><span class="zh">论文简介</span><span class="en">Abstract</span></a></li>
+				        <li><a href="index.html"><span class="zh">返回主页</span><span class="en">Back to Homepage</span></a></li>
+				        <li><a href="https://doi.org/10.1057/s41288-025-00373-0" target="_blank" rel="noopener">DOI</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+	<div class="intro section" id="abstract">
+		<div class="container">
+			<h1><span class="zh">论文简介 · Economic Policy Uncertainty and Corporate Demand for Property Insurance</span><span class="en">Abstract · Economic Policy Uncertainty and Corporate Demand for Property Insurance</span></h1>
+			<p class="cv-meta">Feiyan Yang, Jiahui Ren, Wei He, Tao Li, and Changyuan Xia · <em>The Geneva Papers on Risk and Insurance — Issues and Practice</em> (2026): 299–339</p>
+			<div class="paper-abstract">
+				<h2><span class="zh">简要介绍</span><span class="en">Abstract</span></h2>
+				<p class="zh">本文研究经济政策不确定性是否会影响企业的保险需求。基于2009—2021年中国上市公司面板数据，实证结果表明：面对上升的经济政策不确定性，企业会增加对财产保险的需求。机制分析显示，风险意识与自保能力在企业保险决策中发挥关键作用：风险意识更强或自保能力有限的企业更倾向于购买财产保险。进一步地，企业主要借助保险来应对来自货币政策、贸易政策和汇率政策的不确定性，而非财政政策。研究启示：对企业而言，保险可以作为应对经济政策不确定性、管理整体风险敞口的战略工具。</p>
+				<p class="en">This study investigates whether economic policy uncertainty can affect corporate insurance demand. Based on panel data of Chinese listed companies from 2009 to 2021, our empirical results indicate that companies increase their demand for property insurance in response to elevated economic policy uncertainty. Mechanism analysis underscores the crucial role of risk awareness and self-protection capacity in corporate insurance decisions. Companies with greater risk awareness or limited capacity for self-protection are more likely to acquire property insurance. Moreover, we find that companies primarily seek insurance protection to navigate the uncertainty stemming from monetary policy, trade policy, and exchange rate policy, rather than fiscal policy. For companies aiming to manage overall risk exposure, our study suggests that insurance can serve as a strategic tool to cope with economic policy uncertainty.</p>
+			</div>
+			<p><a href="https://doi.org/10.1057/s41288-025-00373-0" target="_blank" rel="noopener"><span class="zh">在期刊官网查看全文</span><span class="en">View the full paper on the journal site</span></a> · <a href="index.html"><span class="zh">返回主页</span><span class="en">Back to Homepage</span></a></p>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p><span class="zh">© 2026 黎韬</span><span class="en">© 2026 Tao Li</span></p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:litao@sem.tsinghua.edu.cn"><i class="fa fa-send"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		(function () {
+			var btn = document.getElementById('lang-toggle');
+			function setLang(lang) {
+				document.body.classList.remove('zh', 'en');
+				document.body.classList.add(lang);
+				document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+				document.title = (lang === 'zh') ? '论文简介 · Economic Policy Uncertainty and Corporate Demand for Property Insurance' : 'Abstract · Economic Policy Uncertainty and Corporate Demand for Property Insurance';
+				btn.textContent = (lang === 'zh') ? 'EN' : '中文';
+				try { localStorage.setItem('homepage-lang', lang); } catch (e) {}
+			}
+			var saved = null;
+			try { saved = localStorage.getItem('homepage-lang'); } catch (e) {}
+			setLang(saved === 'en' ? 'en' : 'zh');
+			btn.addEventListener('click', function () {
+				var cur = document.body.classList.contains('en') ? 'en' : 'zh';
+				setLang(cur === 'en' ? 'zh' : 'en');
+			});
+		})();
+    </script>
+</body>
+</html>
